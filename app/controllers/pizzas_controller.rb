@@ -13,6 +13,7 @@ class PizzasController < ApplicationController
   # GET /pizzas/1
   # GET /pizzas/1.json
   def show
+    @pizza = Pizza.find(pizza_params)
   end
 
   # GET /pizzas/new
